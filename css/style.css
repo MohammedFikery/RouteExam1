@@ -43,10 +43,10 @@ nav .nav-item a {
   color: var(--main-color);
   position: relative;
 }
-nav a.active{
+nav a.active {
   position: relative;
 }
-nav a.active::before{
+nav a.active::before {
   content: "";
   width: 60px;
   height: 2px;
@@ -55,8 +55,7 @@ nav a.active::before{
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 0.5git init
-  s;
+  transition: all 0.5;
 }
 /* ==============================End nav============================== */
 /* ==============================start home============================== */
@@ -272,7 +271,7 @@ nav a.active::before{
 /* ==============================Start About============================== */
 #About .container .img-layer {
   position: relative;
-  z-index: 99999;
+  z-index: 9;
 }
 
 #About .container .img-layer::before {
@@ -283,7 +282,7 @@ nav a.active::before{
   top: 6%;
   right: 6%;
   background-image: url(../images/dots.png);
-  z-index: 999;
+  z-index: 8;
 }
 #About .container .img-layer img {
   position: relative;
