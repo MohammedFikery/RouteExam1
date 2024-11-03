@@ -1,0 +1,579 @@
+:root {
+  --main-color: rgb(52, 52, 52);
+  --second-color: #f7f7f7;
+}
+html {
+  scroll-padding-top: 50px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.4;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--second-color);
+  width: 100%;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+/* ==============================start nav============================== */
+nav .container a.navbar-brand {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+nav .nav-item a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--main-color);
+  position: relative;
+}
+nav a.active{
+  position: relative;
+}
+nav a.active::before{
+  content: "";
+  width: 60px;
+  height: 2px;
+  background: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5git init
+  s;
+}
+/* ==============================End nav============================== */
+/* ==============================start home============================== */
+
+#Home h1::after {
+  content: "";
+  animation: typing 15s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: " |";
+  }
+  1.79% {
+    content: "D|";
+  }
+  3.57% {
+    content: "De|";
+  }
+  5.36% {
+    content: "Des|";
+  }
+  7.14% {
+    content: "Desi|";
+  }
+  8.93% {
+    content: "Desig|";
+  }
+  10.71% {
+    content: "Design|";
+  }
+  12.50% {
+    content: "Designe|";
+  }
+  14.29% {
+    content: "Designer|";
+  }
+  16.07% {
+    content: "Designe|";
+  }
+  17.86% {
+    content: "Design|";
+  }
+  19.64% {
+    content: "Desig|";
+  }
+  21.43% {
+    content: "Desi|";
+  }
+  23.21% {
+    content: "Des|";
+  }
+  25.00% {
+    content: "De|";
+  }
+  26.79% {
+    content: "Dev|";
+  }
+  28.57% {
+    content: "Deve|";
+  }
+  30.36% {
+    content: "Devel|";
+  }
+  32.14% {
+    content: "Develo|";
+  }
+  33.93% {
+    content: "Develop|";
+  }
+  35.71% {
+    content: "Develope|";
+  }
+  37.50% {
+    content: "Developer|";
+  }
+  39.29% {
+    content: "Develope|";
+  }
+  41.07% {
+    content: "Develop|";
+  }
+  42.86% {
+    content: "Develo|";
+  }
+  44.64% {
+    content: "Devel|";
+  }
+  46.43% {
+    content: "Deve|";
+  }
+  48.21% {
+    content: "Dev|";
+  }
+  50.00% {
+    content: "De|";
+  }
+  51.79% {
+    content: "D|";
+  }
+  53.57% {
+    content: "|";
+  }
+  55.36% {
+    content: "L|";
+  }
+  57.14% {
+    content: "La|";
+  }
+  58.93% {
+    content: "Lar|";
+  }
+  60.71% {
+    content: "Larr|";
+  }
+  62.50% {
+    content: "Larry|";
+  }
+  64.29% {
+    content: "Larry D|";
+  }
+  66.07% {
+    content: "Larry Da|";
+  }
+  67.86% {
+    content: "Larry Dan|";
+  }
+  69.64% {
+    content: "Larry Dani|";
+  }
+  71.43% {
+    content: "Larry Danie|";
+  }
+  73.21% {
+    content: "Larry Daniel|";
+  }
+  75.00% {
+    content: "Larry Daniels|";
+  }
+  76.79% {
+    content: "Larry Daniel|";
+  }
+  78.57% {
+    content: "Larry Danie|";
+  }
+  80.36% {
+    content: "Larry Dani|";
+  }
+  82.14% {
+    content: "Larry Dan|";
+  }
+  83.93% {
+    content: "Larry Da|";
+  }
+  85.71% {
+    content: "Larry D|";
+  }
+  87.50% {
+    content: "Larry|";
+  }
+  89.29% {
+    content: "Larr|";
+  }
+  91.07% {
+    content: "Lar|";
+  }
+  92.86% {
+    content: "La|";
+  }
+  94.64% {
+    content: "L|";
+  }
+  96.43% {
+    content: "|";
+  }
+  98.21% {
+    content: "|";
+  }
+  100% {
+    content: "|";
+  }
+}
+#Home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images//bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+#Home .container h5 {
+  font-size: 50px;
+  font-weight: 800;
+}
+#Home .container h1 {
+  font-size: 60px;
+  font-weight: 200;
+}
+#Home li i {
+  margin: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  background-color: black;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ==============================End home============================== */
+/* ==============================Start About============================== */
+#About .container .img-layer {
+  position: relative;
+  z-index: 99999;
+}
+
+#About .container .img-layer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 6%;
+  right: 6%;
+  background-image: url(../images/dots.png);
+  z-index: 999;
+}
+#About .container .img-layer img {
+  position: relative;
+  z-index: 1000;
+}
+.about-discrepaion {
+  width: 90%;
+}
+.about-discrepaion h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about-discrepaion .sub-title {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: block;
+}
+#About .progress-bar {
+  width: 90%;
+  height: 25px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+}
+#About .progress-bar .divindiv {
+  height: 100%;
+  background: var(--main-color);
+  color: white;
+}
+#About .container .WebDesign {
+  width: 95%;
+}
+#About .container .Branding {
+  width: 80%;
+}
+#About .container .Development {
+  width: 90%;
+}
+
+.btn-download-hover:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+.btn-Contact-hover:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* ==============================End About============================== */
+/* ==============================start Services============================== */
+.main-information h3 {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+
+.main-information h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+
+#Services i {
+  margin: 15px;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--main-color);
+  background-color: rgba(128, 128, 128, 0.199);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
+#Services i:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+/* ==============================End Services============================== */
+/* ==============================start Portfolio============================== */
+
+.gallery .layer {
+  width: 92%;
+  height: 97%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.gallery .layer:hover {
+  opacity: 1;
+  transition: all 1s;
+}
+.gallery .layer i {
+  margin: 15px;
+  color: white;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.gallery .layer i:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+.nav-link {
+  color: var(--main-color);
+}
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border: 0 solid transparent !important;
+  background-color: transparent;
+  color: var(--main-color);
+  position: relative;
+}
+
+.nav-pills .nav-link.active::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--main-color);
+}
+/* ==============================End Portfolio============================== */
+/* ==============================start Clients============================== */
+
+.carousel-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: inline-block;
+}
+div.carousel-item.active::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+.carousel-indicators [data-bs-target]::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+}
+.carousel button {
+  transition: all 0.5s;
+}
+.carousel button:hover {
+  background-color: gray;
+}
+
+#Counter i {
+  font-size: 30px;
+}
+#Counter p {
+  font-size: 30px;
+  font-weight: 900;
+}
+/* ==============================End Clients============================== */
+/* ==============================start Team============================== */
+#Team .card {
+  background-color: var(--main-color);
+  color: white;
+}
+
+#Team .card h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#Team .card h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#Team .layer {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s;
+}
+
+#Team .card:hover .layer {
+  opacity: 1;
+  width: 96%;
+  height: 97%;
+  inset: 5px;
+  transform: rotateY(180deg);
+}
+#Team img:hover {
+  scale: 1.2;
+  transition: all 0.6s;
+}
+#Team .layer ul {
+  transform: rotateY(180deg);
+}
+#Team ul i {
+  margin: 15px;
+  color: white;
+  background-color: var(--main-color);
+  height: 30px;
+  width: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+#Team ul i:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+/* ==============================End Team============================== */
+/* ==============================start Contact============================== */
+#Contact i {
+  margin: 15px;
+  font-size: 30px;
+  color: var(--main-color);
+  background-color: rgba(128, 128, 128, 0.199);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  transition: 1s;
+}
+#Contact i:hover {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+
+.form-group {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+  margin-bottom: 10px;
+  outline: none !important;
+}
+/* ==============================End Contact============================== */
+/* ==============================End Contact============================== */
+#Footer p {
+  color: RGB(116, 129, 130);
+}
+/* ==============================End Contact============================== */
